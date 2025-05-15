@@ -10,7 +10,7 @@ class YourPlayer < BasePlayer
     grid_size = grid.max_col + 1
 
     row = time / grid_size
-    col = even?(row) ? time % max : ((grid_size -1) - (time % grid_size)) 
+    col = even?(row) ? time % grid_size : ((grid_size -1) - (time % grid_size)) 
 
     {
       row: row ,
